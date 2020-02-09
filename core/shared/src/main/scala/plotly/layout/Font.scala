@@ -18,7 +18,7 @@ object Font {
     family: String = null,
      color: Color  = null
   ): Font =
-    Font(
+    new Font(
       Option(size).map(x => x: Int),
       Option(family),
       Option(color)

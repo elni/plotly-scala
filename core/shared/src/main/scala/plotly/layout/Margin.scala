@@ -22,7 +22,7 @@ object Margin {
              b: JInt     = null,
            pad: JInt     = null
   ): Margin =
-    Margin(
+    new Margin(
       Option(autoexpand).map(b => b: Boolean),
       Option(l).map(n => n: Int),
       Option(r).map(n => n: Int),

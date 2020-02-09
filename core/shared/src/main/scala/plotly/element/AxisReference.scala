@@ -14,4 +14,6 @@ object AxisReference {
   case object Y2 extends AxisReference("y2")
   case object Y3 extends AxisReference("y3")
   case object Y4 extends AxisReference("y4")
+  case class X(i: Int) extends AxisReference(s"x$i")
+  case class Y(i: Int) extends AxisReference(s"y$i")
 }

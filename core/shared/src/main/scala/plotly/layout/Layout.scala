@@ -28,18 +28,19 @@ import dataclass.data
     annotations: Option[Seq[Annotation]],
    plot_bgcolor: Option[Color],
   paper_bgcolor: Option[Color],
-           font: Option[Font],
-         bargap: Option[Double],
-    bargroupgap: Option[Double],
-      hovermode: Option[HoverMode],
-        boxmode: Option[BoxMode],
-          scene: Option[Scene]
-
+  font: Option[Font],
+  bargap: Option[Double],
+  bargroupgap: Option[Double],
+  hovermode: Option[HoverMode],
+  boxmode: Option[BoxMode],
+  scene: Option[Scene],
+  grid: Option[Grid]
 )
 
 object Layout {
+
   def apply(
-            title: String          = null,
+    title: String = null,
            legend: Legend          = null,
             width: JInt            = null,
            height: JInt            = null,
@@ -59,13 +60,14 @@ object Layout {
            margin: Margin          = null,
       annotations: Seq[Annotation] = null,
      plot_bgcolor: Color           = null,
-    paper_bgcolor: Color           = null,
-             font: Font            = null,
-           bargap: JDouble         = null,
-      bargroupgap: JDouble         = null,
-        hovermode: HoverMode       = null,
-          boxmode: BoxMode         = null,
-            scene: Scene           = null
+    paper_bgcolor: Color = null,
+    font: Font = null,
+    bargap: JDouble = null,
+    bargroupgap: JDouble = null,
+    hovermode: HoverMode = null,
+    boxmode: BoxMode = null,
+    scene: Scene = null,
+    grid: Grid = null,
   ): Layout =
     new Layout(
       Option(title),
@@ -94,6 +96,7 @@ object Layout {
       Option(bargroupgap).map(x => x),
       Option(hovermode),
       Option(boxmode),
-      Option(scene)
+      Option(scene),
+      Option(grid),
     )
 }

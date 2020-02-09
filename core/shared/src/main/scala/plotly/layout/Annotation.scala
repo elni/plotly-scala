@@ -30,7 +30,7 @@ object Annotation {
          font: Font     = null,
     showarrow: JBoolean = null
   ): Annotation =
-    Annotation(
+    new Annotation(
       Option(xref),
       Option(yref),
       Option(x),

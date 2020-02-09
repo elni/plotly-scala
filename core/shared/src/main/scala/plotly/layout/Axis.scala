@@ -82,7 +82,7 @@ object Axis {
             nticks: JInt             = null,
         automargin: JBoolean         = null
   ): Axis =
-    Axis(
+    new Axis(
       Option(title),
       Option(titlefont),
       Option(showgrid)       .map(x => x: Boolean),

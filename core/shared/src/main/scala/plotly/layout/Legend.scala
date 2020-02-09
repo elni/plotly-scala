@@ -30,7 +30,7 @@ object Legend {
         xanchor: Anchor     = null,
         yanchor: Anchor     = null
   ): Legend =
-    Legend(
+    new Legend(
       Option(x).map(v => v: Double),
       Option(y).map(v => v: Double),
       Option(traceorder),
