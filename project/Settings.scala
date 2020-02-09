@@ -97,7 +97,7 @@ object Settings {
 
   lazy val shared = Seq(
     crossScalaVersions := Seq(scala213, scala212),
-    scalaVersion := scala213,
+    scalaVersion := scala212,
     resolvers ++= Seq(
       "Webjars Bintray" at "https://dl.bintray.com/webjars/maven/",
       Resolver.sonatypeRepo("releases"),
